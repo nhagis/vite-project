@@ -23,5 +23,6 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'react/function-component-definition': 0,
   },
 };
