@@ -14,8 +14,54 @@ body {
 html,
 body {
   scroll-behavior: smooth;
+  @apply bg-subMain font-main;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+.trans {
+  @apply transition duration-1000 ease-out;
+}
+.social {
+  @apply hover:animate-spin;
+}
+
+.flex-colo {
+  @apply flex justify-center items-center flex-col;
+}
+.flex-rows {
+  @apply flex justify-center items-center flex-row gap-12 text-xs;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+}
+.box-1 {
+  width: 36%;
+}
+.box-2 {
+  width: 64%;
+}
+.box-shadow {
+  box-shadow: 10px 10px 40px 0px #24252614;
+  box-shadow: -10px -10px 40px 0px #24252614;
+}
+
+@media (max-width: 640px) {
+  .main-box {
+    flex-direction: column;
+  }
+  .box-1,
+  .box-2 {
+    width: 100%;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+}

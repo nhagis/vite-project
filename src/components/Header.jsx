@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdShoppingBasket } from 'react-icons/md';
-import Logo from './img/logo.png';
+import Logo from './img/smgc.png';
 import Avatar from './img/avatar.png';
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
       {/* Desktop and Tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={Logo} className="w-8 object-cover" alt="logo" />
+          <img src={Logo} className="w-12 object-cover" alt="logo" />
           <p className="text-headingColor text-xl font-bold">ISMMART</p>
         </div>
         <div className="flex items-center gap-8">
