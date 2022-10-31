@@ -14,7 +14,8 @@ body {
 html,
 body {
   scroll-behavior: smooth;
-  @apply bg-subMain font-main;
+  /* @apply bg-subMain font-main; */
+  @apply font-main;
 }
 
 @tailwind base;
