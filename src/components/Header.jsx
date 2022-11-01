@@ -11,11 +11,11 @@ const Header = () => {
     setIsMenu(!isMenu);
   };
   return (
-    <header className="fixed z-50 w-screen p-3 px-4 md:p-6 md:px-16">
+    <header className="fixed z-50 w-screen lg:py-1 md:py-1 p-3 px-4 md:p-6 md:px-16 bg-primary">
       {/* Desktop and Tablet */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src={Logo} className="w-12 object-cover" alt="logo" />
+          <img src={Logo} className="w-20 object-cover" alt="logo" />
           <p className="text-headingColor text-xl font-bold">ISMMART</p>
         </Link>
         <div className="flex items-center gap-8">
